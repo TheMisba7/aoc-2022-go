@@ -1,7 +1,7 @@
 package main
 
 import (
-	"advent-of-code-go/day01"
+	"advent-of-code-go/day"
 	"advent-of-code-go/util"
 	"bufio"
 	"fmt"
@@ -40,7 +40,8 @@ func run(day Day, part int, data []string) string {
 
 func main() {
 	var days = make(map[int]Day)
-	days[1] = day01.Day01{}
+	days[1] = day.Day01{}
+	days[2] = day.Day02{}
 	day, part := util.GetDayAndPart(os.Args)
 	lines := loadData(day)
 	var result = run(days[day], part, lines)

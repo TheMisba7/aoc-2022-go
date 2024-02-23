@@ -1,4 +1,4 @@
-package day01
+package day
 
 import (
 	"advent-of-code-go/util"
