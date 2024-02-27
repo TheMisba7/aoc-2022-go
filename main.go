@@ -42,6 +42,7 @@ func main() {
 	var days = make(map[int]Day)
 	days[1] = day.Day01{}
 	days[2] = day.Day02{}
+	days[3] = day.Day03{}
 	day, part := util.GetDayAndPart(os.Args)
 	lines := loadData(day)
 	var result = run(days[day], part, lines)
